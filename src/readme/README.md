@@ -1,3 +1,2 @@
-# Test
-
-This version [[${version}]]
+# My Project
+This version is [[${version}]] and contains [[${releaseInfo}]]
