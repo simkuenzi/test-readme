@@ -18,6 +18,7 @@ java {
 
 release {
     buildTasks = ['readme']
+    failOnSnapshotDependencies = false
 }
 
 readme {
