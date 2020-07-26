@@ -1,0 +1,25 @@
+    plugins {
+    id 'java'
+    id 'net.researchgate.release' version '2.8.1'
+    id 'com.github.simkuenzi.readme' version '0.0-SNAPSHOT'
+}
+
+group 'com.github.simkuenzi'
+version version
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility JavaVersion.VERSION_11
+    targetCompatibility JavaVersion.VERSION_11
+}
+
+release {
+    buildTasks = ['readme']
+}
+
+readme {
+    overwrite = true
+}
